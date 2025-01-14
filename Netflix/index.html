@@ -5,33 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>netflix.com/login</title>
     <style>
+        body{
+            box-sizing: border-box;
+        }
         form{
-            background-color: black;
+            background-color: rgba(0,0,0,0.7);
             color:white;
-            width:40%;
+            width:30%;
             margin:40px auto;
+            margin-bottom: 0;
+            padding: 40px;
         }
         body{
             background-image: url(netbag.jpeg);
             background-repeat: no-repeat;
             background-size: cover;
         }
+       /*  input{
+            width:100%;
+        } */
+        input[type="text"],input[type="password"]{
+            width:100%;
+            padding:15px 1px 15px 5px;
+            margin:10px;
+            background-color: black;
+            opacity:0.5;
+            color:white;
+            border-radius: 7px;
+            border:1px solid white;
+        }
+        button[type="submit"]{
+            border:none;
+            width:100%;
+            padding:15px;
+            margin:10px;
+            border-radius: 7px;
+            color: white;
+        }
+        .or{
+            text-align: center;
+        }
+        .sign{
+            background-color: red;
+
+        }
+        .code{
+            background-color:rgba(255, 255, 255,0.2);
+            
+
+        }
+
     </style>
 </head>
 <body>
     <form>
-    <img src="netflix.jpeg" alt="Netflix logo">
+<!--     <img src="netflix.jpeg" alt="Netflix logo"> -->
     <h1>Sign In</h1>
-    <input type="text" name="email" value="Email or mobile number">
-    <input type="password" name="password" id="pswd" value="Password">
-    <button type="submit" value="">Sign In</button>
-        <p>OR</p>
-    <button type="submit" value="">Use a Sign-In Code</button>
-        <p>Forgot password?</p>
-       <input type="checkbox" name="Remember" id="check"> <label for="check">Remember Me</label>
+   <div> <input type="text" name="email" value="Email or mobile number"></div>
+   <div><input type="password" name="password" id="pswd" value="Password"></div>
+   <div >
+    <button type="submit" value="submit" class="sign">Sign In</button>
+   </div>
+   <p class="or">OR</p>
+   <div>
+    <button type="submit"  value="submit" class="code">Use a Sign-In Code</button>
+   </div>
+   <p class="or">Forgot password?</p>
+    <input type="checkbox" name="Remember" id="check"> <label for="check">Remember Me</label>
+    </form>
        <p>New to Netflix? Sign up now</p>
        <p>This page is protected by Google reCAPTCHA to ensure you're not a robot. <a href="#">Learn more</a></p>
-    </form>
+    
 
     </body>
 </html>
